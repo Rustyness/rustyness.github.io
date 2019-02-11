@@ -2,4 +2,4 @@
 
 ## License
 
-[MIT License](http://rustyness.github.io/license.md) © Thiago Silveira
+[MIT License](https://rustyness.github.io/LICENSE.md) © Thiago Silveira
