@@ -1,0 +1,22 @@
+:root {
+    --MainBG: #000;
+  }
+
+body {
+    margin: 0;
+    background: var(--MainBG);
+}
+
+video {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+
+.OverlayVideo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(to right, var(--MainBG) 0%, var(--MainBG) 30%, transparent 100%);
+}
