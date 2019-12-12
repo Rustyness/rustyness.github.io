@@ -34,10 +34,18 @@ h2 {
     background-color: var(--marsalaDark);
 }
 
-.l-body__logo {
-    width: 450px;
-    border-radius: 50%;
-}
+    .l-body__content {
+       display: flex;
+       align-items: center;
+       justify-content: center;   
+    }
+
+    .l-body__logo {
+        width: 450px;
+        border-radius: 50%;
+    }
+
+
 
 .l-txtRotate > .l-cursor {
     border-right: 0.08em solid var(--marsala);
