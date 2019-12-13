@@ -28,6 +28,10 @@ h2 {
     letter-spacing: 1px;
 }
 
+article {
+    margin: 0 1.6rem;
+}
+
 .l-body {
     text-align: left;
     color: var(--rose);
@@ -35,17 +39,20 @@ h2 {
 }
 
     .l-body__content {
+       margin-top: 25vh;
        display: flex;
        align-items: center;
        justify-content: center;   
     }
 
-    .l-body__logo {
-        width: 450px;
-        border-radius: 50%;
-    }
+        .l-body__logo {
+            width: 250px;
+            border-radius: 50%;
+        }
 
-
+        .l-body__text {
+            width: 45vw;
+        }
 
 .l-txtRotate > .l-cursor {
     border-right: 0.08em solid var(--marsala);
@@ -57,11 +64,11 @@ h2 {
 
 footer {
     margin-top: 50px;
+    text-align: center;
 }
 
     footer img {
         width: 50px;
-        /* filter: drop-shadow( 2px 2px 3px rgba(146, 36, 75, .7));     */
     }
 
     footer img:hover {
