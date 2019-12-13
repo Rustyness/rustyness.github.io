@@ -102,3 +102,23 @@ footer {
       transform: scale3d(1, 1, 1);
     }
   }
+
+  @media (max-width: 575px) {
+
+    .l-body__content {
+        margin-top: 5vh;
+        flex-direction: column;
+    }
+
+    .l-body__logo {
+        width: 250px;
+    }
+
+    .l-body__text {
+        width: 85vw;
+    }
+
+    footer {
+        margin-bottom: 20vw;
+    }
+  }
