@@ -20,7 +20,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 4.3rem;
+    font-size: 4.0rem;
 }
 
 h2 {
@@ -121,4 +121,24 @@ footer {
     footer {
         margin-bottom: 20vw;
     }
+
+    footer a {
+        margin: 0 10px;
+    }
+  }
+
+  @media (max-width: 320px) {
+
+    h1 {
+        font-size: 3.6rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+
+    footer a {
+        margin: 0 5px;
+    } 
   }
