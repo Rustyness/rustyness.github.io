@@ -1,4 +1,4 @@
-Copyright (c) 2019 Thiago Silveira, [rustyness.github.io](https://rustyness.github.io/)
+Copyright (c) 2019 Rustyness, [rustyness.github.io](https://rustyness.github.io/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

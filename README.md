@@ -5,4 +5,4 @@ Single page site for my contacts
 
 ## License
 
-[MIT License](https://github.com/Rustyness/rustyness.github.io/blob/master/LICENSE.md) © Thiago Silveira
+[MIT License](https://github.com/Rustyness/rustyness.github.io/blob/master/LICENSE.md) © Rustyness
