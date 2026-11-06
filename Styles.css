@@ -1,35 +1,50 @@
 :root {
     --white: #fff;
     --black: #000;
-    --marsala: #92244b ;
+    --marsala: #92244b;
     --marsalaDark: #5a1532;
     --rose: #fbd7d6;
 }
 
 body, html {
-    padding:0;
-    margin:0;
-    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
     color: var(--marsala);
     font-size: 62.5%;
 }
 
-h1, h2 {
+h1, p {
     font-weight: 200;
     margin: 0.4em 0;
 }
 
 h1 {
     font-size: 4.0rem;
+    line-height: 1.2;
 }
 
-h2 {
+.l-body__hello,
+.l-body__invite {
     font-size: 2.0rem;
     letter-spacing: 1px;
+    line-height: 1.4;
 }
 
-article {
-    margin: 0 1.6rem;
+.l-body__also {
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 1.3;
+    min-height: 1.3em;
+}
+
+.l-body__invite {
+    font-weight: 300;
+    text-wrap: pretty;
+}
+
+h1 {
+    text-wrap: balance;
 }
 
 .l-body {
@@ -39,52 +54,83 @@ article {
 }
 
     .l-body__content {
-       margin-top: 25vh;
-       display: flex;
-       align-items: center;
-       justify-content: center;   
+        margin-top: 25vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
+        .l-body__photo {
+            margin: 0 1.6rem;
+        }
 
         .l-body__logo {
             width: 250px;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
             border-radius: 50%;
+            display: block;
         }
 
         .l-body__text {
             width: 45vw;
+            margin: 0 1.6rem;
         }
 
 .l-txtRotate > .l-cursor {
-    border-right: 0.08em solid var(--marsala);
+    border-right: 0.08em solid var(--rose);
 }
 
 .l-cursor {
     animation: blink-caret .75s step-end infinite;
 }
 
-footer {
-    margin-top: 50px;
-    text-align: center;
+.l-body__social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 2.4rem;
 }
 
-    footer img {
-        width: 50px;
+    .l-body__social a {
+        display: block;
+        border-radius: 8px;
+        line-height: 0;
     }
 
-    footer img:hover {
+    .l-body__social img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .l-body__social a:hover img,
+    .l-body__social a:focus-visible img {
         -webkit-animation: pulse .4s linear alternate;
         animation: pulse .4s linear alternate;
     }
 
-    footer a {
-        margin: 0 15px;
-        color: var(--marsalaDark);
-    }  
+    .l-body__social a:focus-visible {
+        outline: 2px solid var(--rose);
+        outline-offset: 4px;
+    }
+
+.u-visuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
 
 @keyframes blink-caret {
-    0% { border-color:  var(--marsala);}
+    0% { border-color: var(--rose); }
     50% { border-color: transparent; }
-    100% { border-color: var(--marsala); }
+    100% { border-color: var(--rose); }
 }
 
 @keyframes pulse {
@@ -92,54 +138,72 @@ footer {
       -webkit-transform: scale3d(1, 1, 1);
       transform: scale3d(1, 1, 1);
     }
-  
+
     50% {
       -webkit-transform: scale3d(1.05, 1.05, 1.05);
       transform: scale3d(1.05, 1.05, 1.05);
     }
-  
+
     to {
       -webkit-transform: scale3d(1, 1, 1);
       transform: scale3d(1, 1, 1);
     }
-  }
+}
 
-  @media (max-width: 575px) {
+@media (prefers-reduced-motion: reduce) {
+
+    .l-cursor,
+    .l-body__social a:hover img,
+    .l-body__social a:focus-visible img {
+        animation: none;
+        -webkit-animation: none;
+    }
+}
+
+@media (max-width: 575px) {
 
     .l-body__content {
         margin-top: 5vh;
         flex-direction: column;
     }
 
-    .l-body__logo {
-        width: 250px;
-    }
-
     .l-body__text {
         width: 85vw;
+        margin-top: 2rem;
     }
 
-    footer {
-        margin-bottom: 20vw;
+    .l-body__also {
+        min-height: 2.6em;
     }
 
-    footer a {
-        margin: 0 10px;
+    .l-body__social {
+        gap: 10px;
+        margin-bottom: 10vw;
     }
-  }
+}
 
-  @media (max-width: 320px) {
+@media (max-width: 320px) {
 
     h1 {
-        font-size: 3.6rem;
+        font-size: 3.2rem;
     }
-    
-    h2 {
+
+    .l-body__hello,
+    .l-body__invite {
         font-size: 1.6rem;
         letter-spacing: 1px;
     }
 
-    footer a {
-        margin: 0 5px;
-    } 
-  }
+    .l-body__also {
+        font-size: 2rem;
+    }
+
+    .l-body__social {
+        gap: 6px;
+    }
+
+    .l-body__social img {
+        width: 44px;
+        height: 44px;
+    }
+}
