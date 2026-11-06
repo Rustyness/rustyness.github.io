@@ -9,18 +9,19 @@
 body, html {
     padding: 0;
     margin: 0;
-    font-family: 'Raleway', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     color: var(--marsala);
     font-size: 62.5%;
 }
 
 h1, p {
-    font-weight: 200;
+    font-weight: 300;
     margin: 0.4em 0;
 }
 
 h1 {
     font-size: 4.0rem;
+    font-weight: 700;
     line-height: 1.2;
 }
 
