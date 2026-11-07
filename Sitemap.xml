@@ -6,4 +6,10 @@
 	<changefreq>monthly</changefreq>
 	<priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://rustyness.com.br/projects/observability/</loc>
+    <lastmod>2026-11-07T00:00:00Z</lastmod>
+	<changefreq>monthly</changefreq>
+	<priority>0.8</priority>
+  </url>
 </urlset>
